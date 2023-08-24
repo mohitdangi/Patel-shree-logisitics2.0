@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patel Shree Logistics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="testimonial/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="testimonial/style.css" />
+
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+    <div class="master-container">
+        
+    <div class="contact-container">
+        <div class="left-contact">
+            <div class="mail-div">
+                <i class="fas fa-envelope"></i><a href="mailto:patelsri@gmail.com" class="email">patelsri@gmail.com</a>
+            </div>
+            <div class="contact-div">
+                <i class="fas fa-phone"></i><a href="tel:6260036264" class="contact">+91 6260036264</a>
+            </div>
+        </div>
+        <div class="social-media-contact">
+            <a href="#" class="facebook-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="instagram-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    
+
+    <div class="navbar">
+        <div class="company-name"><a href="#home">Patel Shree Logistics</a></div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#how">HOW WE WORK</a></li>
+            <li><a href="#testimonials">TESTIMONIALS</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+        <button class="quote-button" id="get-quote-button2">GET A QUOTE</button>
+
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            const lines = document.querySelectorAll('.hamburger div');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('show');
+                lines.forEach(line => line.classList.toggle('change'));
+            });
+
+
+        </script>
+    </div>
+
+
+    <div class="header" id="home">
+        <div class="text-content">
+            <h1>Patel Shree Logistics</h1>
+            <p>We operate daily across Madhya Pradesh, providing reliable transportation services for various needs.
+                From local to long distances, we've got you covered. Contact us today for efficient and trusted hauling
+                solutions.</p>
+        </div>
+        <div class="buttons">
+            <button class="book-now" id="book-now-button">BOOK TRUCK NOW</button>
+
+
+            <button class="get-quote" id="get-quote-button">GET INSTANT QUOTE</button>
+
+        </div>
+        <div class="master-div">
+            <div class="background-image"></div>
+        </div>
+    </div>
+
+    <!-- <div class="transport">
+        <h1 class="heading">Get Your Transport</h1>
+        <div class="dotted-border"></div>
+        <div class="section">
+            <div class="card">
+                <div class="card-head">
+                    <i class="fas fa-truck"></i>
+                    <h2>half Trcuk Load</h2>
+                </div>
+                <ul>
+                    <li>information about half load transport</li>
+                    <li> information about half load transport</li>
+                    <li> information about half load transport</li>
+                </ul>
+                <button class="btn">Book Now</button>
+            </div>
+            <hr>
+            <div class="card">
+                <div class="card-head">
+                    <i class="fas fa-truck"></i>
+                    <h2>Full Trcuk Load</h2>
+                </div>
+                <ul>
+                    <li>information about half load transport</li>
+                    <li> information about half load transport</li>
+                    <li> information about half load transport</li>
+                </ul>
+                <button class="btn">Book Now</button>
+            </div>
+        </div>
+    </div> -->
+    
+    <section class="how-it-works" id="how">
+        <h2>How It Works</h2>
+        <div class="work-border"></div>
+
+        <div class="step-container">
+            <div class="step">
+                <div class="circle">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <p class="step-number">1</p>
+                <h3>Call Us</h3>
+                <p class="step-info">
+                    For quick pickup requests, dial our number. We're here to assist you promptly.</p>
+                <p class="dummy-info">Phone: <a href="tel:6260036364">6260036364</a></p>
+
+            </div>
+            <div class="step">
+                <div class="circle">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <p class="step-number">2</p>
+                <h3>Book a Pickup</h3>
+                <p class="step-info">Our team will arrange pickup to match your requirements. Just let us know.</p>
+                <p class="dummy-info">Phone: <a href="tel:6260036364">6260036364</a></p>
+
+            </div>
+            <div class="step">
+                <div class="circle">
+                    <i class="fas fa-truck-moving"></i>
+                </div>
+                <p class="step-number">3</p>
+                <h3>Transport (Truck)</h3>
+                <p class="step-info">
+
+                    Rest assured, your item will be delivered swiftly and securely, without compromise.</p>
+                <p class="dummy-info">Phone: <a href="tel:6260036364">6260036364</a></p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="transportation-info">
+        <h2>Most Travalled Route Information</h2>
+        <div class="border-top"></div>
+        <div class="superset">
+            <div class="transport-set">
+                <h3>Bhopal ~ Indore</h3>
+                <div class="info-column">
+                    <div class="info-column-ques">
+                        <p>DISTANCE</p>
+                        <p>PRICE</p>
+                        <p>DURATION</p>
+                        <p>TRUCK TYPE</p>
+                    </div>
+                    <div class="info-column-ans">
+                        <p>190km</p>
+                        <p>-----</p>
+                        <p>4-6 hrs</p>
+                        <p>Bolero, Super-Carry and others</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Set -->
+            <div class="transport-set">
+                <h3>Mandideep ~ Pithampur </h3>
+                <div class="info-column">
+                    <div class="info-column-ques">
+                        <p>DISTANCE</p>
+                        <p>PRICE</p>
+                        <p>DURATION</p>
+                        <p>TRUCK TYPE</p>
+                    </div>
+                    <div class="info-column-ans">
+                        <p>242.6km</p>
+                        <p>-----</p>
+                        <p>4-6 hrs</p>
+                        <p>Bolero, Super-Carry and others</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Set -->
+            <div class="transport-set">
+                <h3>Mandideep ~ Dewas</h3>
+                <div class="info-column">
+                    <div class="info-column-ques">
+                        <p>DISTANCE</p>
+                        <p>PRICE</p>
+                        <p>DURATION</p>
+                        <p>TRUCK TYPE</p>
+                    </div>
+                    <div class="info-column-ans">
+                        <p>173.5 km</p>
+                        <p>-----</p>
+                        <p>4-6 hrs</p>
+                        <p>Bolero, Super-Carry and others</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="book-transport">
+        <h2>Book Transport<br>
+            Transport Services</h2>
+        <p class="sub-heading">Book Full Load or Part Load Transport Across Major Madhya Pradesh Cities</p>
+        <br>
+        <br>
+        <div class="input-container">
+            <input type="text" id="pickupInput" placeholder="Pickup location">
+            <input type="text" id="dropInput" placeholder="Drop location">
+
+            <button id="send-whatsapp">Book Now <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <section class="about-us" id="about">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <div class="border"></div>
+            <h3>Patel Shri Logistics</h3>
+            <p>
+                In just 2-3 years, our journey has been remarkable. Starting with a single mini truck, we've expanded to
+                operate 4-5 of our own trucks. Beyond that, our network includes numerous other trucks, united under our
+                reliable transportation services.
+            </p>
+            <ul>
+                <li> Reliable Logistics Solutions</li>
+                <li>Timely Deliveries Guaranteed</li>
+                <li> Strong Industry Presence</li>
+                <li> Trained and Skilled Drivers </li>
+            </ul>
+        </div>
+        <div class="about-photo">
+            <img src="./assets/pngwing_com_(1)-bhozWi2XE-transformed 1.png" alt="">
+        </div>
+    </section>
+
+    <section class="daily-ride" id="daily">
+        <h2>Daily All MP Routes</h2>
+        <p class="daily-info">
+
+            Navigating through all logistics MP routes, we guarantee seamless<br> and reliable transportation solutions
+            for efficient delivery across various destinations.
+        </p>
+        <div class="center-button">
+            <button id="get-quote-button3">GET A QUOTE INSTANTLY</button>
+        </div>
+    </section>
+
+    <section class="container" id="testimonials">
+
+        <div class="testimonial mySwiper">
+            <h2 class="testimonial-heading">Client Testimonials</h2>
+            <div class="testimonial-border"></div>
+            <div class="testi-content swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="assets/pngwing_com_(1)-bhozWi2XE-transformed 1.png" alt="" class="image" />
+                    <p>
+                        Patel Shri Logistics has been incredibly supportive and efficient. Their team's dedication to
+                        providing excellent service shines through in every interaction. From their helpful assistance
+                        to their prompt deliveries, they've proven to be a valuable partner in our logistics needs.
+                        Highly recommended
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+                        <span class="name">Rakesh Dev Dutt</span>
+                        <span class="job">Khushi transports</span>
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="assets/pngwing_com_(3)-toiw4-HkY-transformed 1.png" alt="" class="image" />
+                    <p>
+
+                        पटेल श्री लॉजिस्टिक्स ने अपनी असाधारण सेवा से हमारी अपेक्षाओं को पार कर लिया है। उनकी टीम के
+                        सक्रिय दृष्टिकोण और परेशानी मुक्त डिलीवरी सुनिश्चित करने की उनकी प्रतिबद्धता ने उन्हें हमारी
+                        परिवहन आवश्यकताओं के लिए एक अनिवार्य संपत्ति बना दिया है। उनकी व्यावसायिकता और विश्वसनीयता ने
+                        हमारे परिचालन पर महत्वपूर्ण प्रभाव डाला है।
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+                        <span class="name">
+                            धनजय सिंह</span>
+                        <!-- <span class="job">Web Developer</span> -->
+                    </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="assets/pngwing_com_(1)-bhozWi2XE-transformed 1.png" alt="" class="image" />
+                    <p>
+                        Patel Shree Logistics never disappoints! Their drivers are courteous and professional, and their
+                        vehicles are always clean and comfortable. I highly recommend them for all your transportation
+                        needs.
+                    </p>
+
+                    <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                    <div class="details">
+                        <span class="name">Divya Shakya</span>
+                        <span class="job">Eiser Executive</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="why-choose-us" id="choose">
+        <div class="why-photo">
+
+            <img src="./assets/pngwing_com_(4)-kNEO4qu_l-transformed 2.png" alt="Photo">
+        </div>
+        <div class="why-content">
+            <h2>Why Choose Us</h2>
+            <div class="border-why"></div>
+            <p>
+
+                Choose us for dependable logistics solutions. With years of experience, a growing fleet, and a
+                commitment to timely deliveries, we're your trusted partner in ensuring smooth transportation
+                operations.
+            </p>
+            <ul>
+                <li>On Time Delivery</li>
+                <p> Count on us for punctual deliveries. Our commitment to timely transportation ensures your cargo
+                    reaches its destination exactly when needed, every single time.
+                </p>
+                <li>Trained and Skilled Drivers</li>
+                <p>Our trained and skilled drivers ensure safe and reliable transportation, delivering your goods with
+                    expertise and professionalism, guaranteeing your cargo's secure journey.
+                </p>
+                <li>Safety Measure For Packages</li>
+                <p>We prioritize your goods' safety. With utmost care and attention, we ensure that your cargo remains
+                    secure and in optimal condition throughout the transportation process.
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="popular-trucks" id="trucks">
+        <h2 class="centered-heading">Our Popular Trucks</h2>
+        <div class="dashed-border"></div>
+        <div class="truck-card">
+            <img src="./assets/pngwing_com_(4)-kNEO4qu_l-transformed 2.png" alt="Truck 1">
+            <p class="truck-name">Super Carry</p>
+        </div>
+        <div class="truck-card">
+            <img src="./assets/pngwing_com_(3)-toiw4-HkY-transformed 1.png" alt="Truck 2">
+            <p class="truck-name">Bolero Pick-up</p>
+        </div>
+        <div class="truck-card">
+            <img src="./assets/pngwing_com_(1)-bhozWi2XE-transformed 1.png" alt="Truck 3">
+            <p class="truck-name">Eicher Pick-up</p>
+        </div>
+        <!-- <buton class="read-more">
+            read more
+        </buton> -->
+    </section>
+
+    <div class="wrapper" id="faqs">
+        <h1>Our Transport Expertise</h1>
+        <div class="faq-dotted"></div>
+        <div class="wrapper-para">
+            <p>
+                Quick answers to common queries about our services, operations, and logistics solutions. Find solutions
+                effortlessly.</p>
+        </div>
+        <div class="faq">
+            <button class="accordion">
+                Q: How do I request a quote?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    : Simply contact us through our website,whatsapp or phone, and we'll provide a personalized quote
+                    based on your requirement
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                Q: Can you handle time-sensitive deliveries?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    Yes, we specialize in time-sensitive deliveries and ensure your cargo reaches its destination on
+                    schedule.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                Q: What areas do you cover?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    We cover all over Madhya Pradesh and in future we are also going to cover Maharastra and gujrat
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                Q: Do you offer pick-up and drop-off services for packages?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    While we primarily specialize in transportation,but yes we're here to assist you with any logistics
+                    needs you have.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                Q: How do I track my shipment's status?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    While we don't utilize high-tech technology, we offer our driver's contact number for direct updates
+                    and assistance.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                Q: What safety measures do you have in place for transporting fragile items?
+
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    We employ careful , secure handling, and special considerations to ensure the safe transport of
+                    fragile goods.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="our-location-parent">
+
+        <h1>Our Contact Details</h1>
+        <div class="contact-dotted"></div>
+        <section class="our-location">
+
+            <div class="location-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.522716271229!2d77.51287397301202!3d23.260449061036162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c41080ff06cf3%3A0xcdbfc97fe1ef6efb!2schawani%20adampur%20bhopal!5e0!3m2!1sen!2sin!4v1690718879201!5m2!1sen!2sin"
+                    width="95%" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contact-info" id="contact">
+                <h2>We’d love to hear from you</h2>
+                <p>
+                    Feel free to contact us for any inquiries or assistance at our contact-deatails below: We love to
+                    assist you with your needs
+                </p>
+                <div class="location-details">
+                    <p><i class="fas fa-map-marker-alt"></i> Ashoka Garden, Bhopal</p>
+                    <p><i class="fas fa-phone"></i> +91 6261541723</p>
+                    <p><i class="fas fa-envelope"></i> websculpturer@gmail.com</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-section">
+            <h2>Patel Shri Logistics</h2>
+            <p>
+                Patel Shree Logistics: Your trusted partner in transportation. With years of experience, we provide
+                reliable, timely, and efficient logistics solutions tailored to your requirements.
+            </p>
+        </div>
+        <div class="footer-section footer-section-about">
+            <h3><a href="#trucks">Trcuks</a></h3>
+            <h3><a href="#daily">Daily-Route</a></h3>
+            <h3><a href="#about">ABOUT US</a></h3>
+            <h3><a href="#choose">WHY CHOOSE US</a></h3>
+            <h3><a href="#faqs">FAQ’s</a></h3>
+
+        </div>
+        <div class="footer-section mobile-social">
+            <h3 class="social-media">
+                <i class="fab fa-twitter"><a href="#"></a></i>
+                <i class="fab fa-facebook-f"><a href=""></a></i>
+                <i class="fab fa-instagram"><a href=""></a></i>
+            </h3>
+        </div>
+        <div class="footer-section-contact">
+            <h3>CONTACT</h2>
+                <p><i class="fas fa-map-marker-alt"></i> Ashoka Garden, Bhopal</p>
+                <p><i class="fas fa-phone"></i> +91 6261541723</p>
+                <p><i class="fas fa-envelope"></i> websculpturer@gmail.com</p>
+        </div>
+    </footer>
+
+    <div class="terms">
+        <div class="left-content">
+            <p>Terms and Conditions</p>
+        </div>
+        <div class="right-content">
+            <a href="https://www.websculpture.in/">
+                <p>©2023 Websculpture | All rights reserved</p>
+            </a>
+        </div>
+    </div>
+    </div>
+
+    <script src="testimonial/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
